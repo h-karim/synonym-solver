@@ -1,4 +1,5 @@
 # synonym-solver
+https://github.com/h-karim/synonym-solver
 
 - Install dependencies listed in `requirements.txt`.      
 - To score the models and geenrate the output files, run `python synguess.py`      
