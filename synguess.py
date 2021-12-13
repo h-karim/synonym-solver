@@ -4,16 +4,16 @@ import pandas as pd
 
 models = [
     'word2vec-google-news-300',
-    'glove-twitter-200',
-    'glove-twitter-50',
-    'glove-wiki-gigaword-200',
+    'glove-wiki-gigaword-100',
+    'glove-twitter-100',
+    'glove-wiki-gigaword-50',
+    'glove-wiki-gigaword-300',
 ]
 FILE = 'synonyms.csv'
 for model_name in models:
   print(model_name)
   model = load(model_name)
   df = pd.read_csv(FILE)
-
   for idx, row in df.iterrows():
     # print(row, row['question'])
     for i in range(0, 4):
